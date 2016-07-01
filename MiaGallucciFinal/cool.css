@@ -1,0 +1,118 @@
+html {
+	background-image: url("http://i.imgur.com/UAQqCMQ.jpg");
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	}
+
+#nav {
+	width: 100%;
+	margin: 0 0 1em 0;
+	padding: 0;
+	background-color: rgba(0,0,0,.6);
+	display: inline-block;
+    text-align: right; 
+}
+#nav ul {
+	list-style: none;
+	width: 800px;
+	margin: 0 auto;
+	line-height: 1.7;
+	padding: 0;  
+	}
+#nav li {
+	display: block;
+	list-style: none;
+	display: inline-block;
+    text-align: right; 
+ }
+#nav li a {
+	display: block;
+	font-family: tahoma;
+	font-size: 20px;
+	font-weight: 200;
+	padding: 8px 15px;
+	text-decoration: none;
+	font-weight: none;
+	color: white;
+	opacity: .7;
+	text-align: right;
+	 }
+#nav li a:hover {
+	opacity: 1;
+	transition: all 0.4s;
+ }
+ #nav a:active {
+	background-color: #FFFFFF;
+	color: #72578B;
+}
+
+img {
+	border-color: #333333;
+	border-style: solid;
+	border-width: 10px;
+	align-content: center;
+    display: block;
+    margin: 0 auto;
+}
+
+p {
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	color: #000000;
+	font-weight: 500px;
+}
+
+h2 {
+	font-family: 'Raleway', sans-serif;
+	padding: 7px;
+	color: #DDDDDD;
+	background-color:#373737;
+	text-align: center;
+}
+
+h3 {
+	font-family: 'Raleway', sans-serif;
+	color: #DDDDDD;
+	background-color:#373737;
+	text-align: center;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  border: #333333;
+}
+.container div {
+  background-color: white;
+  width: 100%;
+  display: inline-block;
+  display: none;
+}
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+ position: absolute;
+}
+
+.next {
+  right: 5px;
+  color: #626062;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.prev {
+  left: 5px;
+   color: #626062;
+  font-family: 'Source Sans Pro', sans-serif;
+}

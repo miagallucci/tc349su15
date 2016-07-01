@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<meta charset="utf-8">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+<meta charset="utf-8">
+<title>Mia Gallucci-About</title>
+<link href="cool.css" rel="stylesheet" type="text/css" />
+</head>
+<ul id="nav">
+	<li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="interests.html">Interests</a></li>
+    <li><a href="work.html">Work</a></li>
+</ul>
+<body>
+<section class="demo">
+  <button class="next">Next</button>
+  <button class="prev">Previous</button>
+  <div class="container">
+    <div style="display: inline-block;">
+      <img src="image1.png"/>
+    </div>
+    <div>
+     <img src="http://i.imgur.com/Q2kDlop.jpg"/>
+    </div>
+    <div>
+      <img src="https://placeimg.com/400/200/nature"/>
+    </div>
+    <div>
+      <img src="http://i.imgur.com/uxxFzjr.jpg"/>
+    </div>
+  </div>
+</section>
+<h1>ABOUT</h1>
+<p>Thanks for visting my page! Have questions or want to get in contact? Find my email below, I can't wait to hear from you!</p>
+
+<h2>EDUCATION</h2>
+<ul>
+<li><a href="http://cas.msu.edu/places/departments/telecommunication-information-studies-media/programs/undergraduate-studies/majors/" target="_blank">Major: Media and Information</a></li>
+<li> Concentration: Interactive and Social Media </li>
+</ul>
+<h2> CONTACT INFORMATION </h2>
+<ul>
+<li>Email: <a href="mailto:gallucc3@msu.edu">gallucc3@msu.edu</a> </li>
+<li> <a href="https://twitter.com/miagallucci">Twitter</a> </li>
+<li> <a href="https://www.instagram.com/miagallucci/"> Instagram</a></li>
+</ul>
+</body>
+<script>
+var currentIndex = 0,
+  items = $('.container div'),
+  itemAmt = items.length;
+
+function cycleItems() {
+  var item = $('.container div').eq(currentIndex);
+  items.hide();
+  item.css('display','inline-block');
+}
+
+var autoSlide = setInterval(function() {
+  currentIndex += 1;
+  if (currentIndex > itemAmt - 1) {
+    currentIndex = 0;
+  }
+  cycleItems();
+}, 3000);
+
+$('.next').click(function() {
+  clearInterval(autoSlide);
+  currentIndex += 1;
+  if (currentIndex > itemAmt - 1) {
+    currentIndex = 0;
+  }
+  cycleItems();
+});
+
+$('.prev').click(function() {
+  clearInterval(autoSlide);
+  currentIndex -= 1;
+  if (currentIndex < 0) {
+    currentIndex = itemAmt - 1;
+  }
+  cycleItems();
+});
+</script>
+</html>
